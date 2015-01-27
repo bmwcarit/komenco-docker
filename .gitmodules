@@ -1,0 +1,3 @@
+[submodule "komenco/komenco"]
+	path = komenco/komenco
+	url = "https://github.com/bmwcarit/komenco.git"
