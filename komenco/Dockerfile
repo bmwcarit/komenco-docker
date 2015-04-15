@@ -44,10 +44,6 @@ RUN ln -s /data/src /var/www/html/komenco
 RUN chown -R $DEFAULT_UID /var/www/html/komenco && \
 	chown -R $DEFAULT_UID /data/src
 
-# patch app to run on /komenco/ web path
-RUN sed -i 's!/index!/komenco/index!g' .htaccess && \
-	sed -i 's!/vendor!/komenco/vendor!g' res/styles/main.less
-
 # change to default working directory
 WORKDIR /
 
