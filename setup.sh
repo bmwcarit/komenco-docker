@@ -20,26 +20,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-print_usage ()
-{
-	echo
-	echo "Usage: `basename $0` SOURCEPATH"
-        echo "  SOURCEPATH    Path to the komenco sources"
-}
-
-if [ -z "$1" ]; then
-	echo "setup.sh: Wrong number of arguments"
-	print_usage
-	exit 1
-fi
-
-if [ ! -d "$1" ]; then
-	echo "setup.sh: '$1': No such directory"
-	print_usage
-	exit 1
-fi
-
-export SOURCE_FOLDER=$1
+export SOURCE_FOLDER=komenco/komenco
 export DEV_UID=`id -u`
 FILE=docker-compose.yml
 

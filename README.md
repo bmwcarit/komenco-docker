@@ -36,9 +36,13 @@ base containers and build them
 After checking out this repository with updated submodules you can
 create the docker-compose configuration
 
-    git clone --recursive https://github.com/bmwcarit/komenco-docker.git
+    git clone https://github.com/bmwcarit/komenco-docker.git
     cd komenco-docker
-    ./setup.sh [PATH TO YOUR KOMENCO SOURCE FOLDER]
+
+    # clone komenco into ROOT/komenco/
+    git clone https://github.com/bmwcarit/komenco.git komenco/komenco
+
+    ./setup.sh
 
 And finally create the docker containers
 
