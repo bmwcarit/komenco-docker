@@ -20,7 +20,12 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-export SOURCE_FOLDER=komenco/komenco
+if [ -z "$1" ]; then
+	export SOURCE_FOLDER=./komenco/komenco
+else
+	export SOURCE_FOLDER=$1
+fi
+
 export DEV_UID=`id -u`
 FILE=docker-compose.yml
 
