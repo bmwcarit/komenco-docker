@@ -18,7 +18,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-FROM bmwcarit/komenco-base
+FROM bmwcarit/komenco-base:v1.0.1
 MAINTAINER Michael Knapp <michael.knapp@bmw-carit.de>
 
 # copy sources to the container
@@ -49,4 +49,3 @@ WORKDIR /
 
 # volume to mount dev environment
 VOLUME /data/src
-
