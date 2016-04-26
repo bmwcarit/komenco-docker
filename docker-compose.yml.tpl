@@ -1,5 +1,5 @@
 simpleid:
-        image: bmwcarit/komenco-base-simpleid:v1.0.2
+        image: bmwcarit/komenco-base-simpleid:v1.0.4
         hostname: simpleid
         domainname: localdomain
 komenco:
@@ -14,7 +14,7 @@ komenco:
          - APP_ENVIRONMENT=dev
          - DEV_UID=${DEV_UID}
 test:
-        image: bmwcarit/komenco-base-test:v1.0.2
+        image: bmwcarit/komenco-base-test:v1.0.4
         hostname: test
         domainname: localdomain
         volumes_from:
@@ -26,4 +26,4 @@ test:
          - APP_ENVIRONMENT=dev
          - DEV_UID=${DEV_UID}
 selenium:
-        image: bmwcarit/komenco-base-selenium:v1.0.2
+        image: bmwcarit/komenco-base-selenium:v1.0.4

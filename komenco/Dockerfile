@@ -18,7 +18,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-FROM bmwcarit/komenco-base:v1.0.2
+FROM bmwcarit/komenco-base:v1.0.4
 MAINTAINER Michael Knapp <michael.knapp@bmw-carit.de>
 
 # copy sources to the container
